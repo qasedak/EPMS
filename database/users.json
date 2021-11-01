@@ -1,0 +1,18 @@
+{
+  "1": {
+    "name": "محمد",
+    "lName": "عنبرستانی",
+    "user": "macse",
+    "pass": "123456",
+    "pCode": "88201029",
+    "admin": true
+  },
+  "2": {
+    "lName": "مددی",
+    "name": "علی",
+    "user": "aSky",
+    "pass": "123456@777",
+    "pCode": "129783092",
+    "admin": false
+  }
+}

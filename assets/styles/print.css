@@ -1,0 +1,96 @@
+/* by Skilledup.ir */
+
+@font-face {
+    font-family: Sahel;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/sahel/Sahel.eot');
+    src: url('../fonts/sahel/Sahel.eot') format('embedded-opentype'), /* IE6-8 */ url('../fonts/sahel/Sahel.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('../fonts/sahel/Sahel.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/sahel/Sahel.ttf') format('truetype');
+}
+
+html[dir="rtl"], * {
+    font-family: Sahel, serif !important;
+}
+
+body {
+    -webkit-print-color-adjust: exact !important;
+}
+
+.page-header, .page-header-space {
+    height: 100px;
+}
+
+.page-footer, .page-footer-space {
+    height: 50px;
+
+}
+
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid black;
+    background: #dedede;
+    text-align: center;
+}
+
+.page-header {
+    position: fixed;
+    top: 0mm;
+    width: 100%;
+    border-bottom: 1px solid black; /* for demo */
+    background: #dedede; /* for demo */
+}
+
+.page {
+    page-break-after: always;
+}
+
+@page {
+    margin: 20mm
+}
+
+@media print {
+    thead {
+        display: table-header-group;
+    }
+
+    tfoot {
+        display: table-footer-group;
+    }
+
+    button {
+        display: none;
+    }
+
+    body {
+        margin: 0;
+    }
+}
+
+button {
+    border-radius: 5px;
+    padding: 2px 10px;
+    left: 10px;
+    position: fixed;
+}
+.main-table {
+    text-align: right;
+}
+table {
+    width: 100%;
+}
+.details-tb > td{
+    width: 270px;
+    border: 1px solid #dedede;
+}
+.details-sub > td{
+    width: 145px;
+}
+.sub-left {
+    text-align: left;
+    border-left: 1px solid #dedede;
+}
+.sub-right {
+    border-right: 1px solid #dedede;
+}
